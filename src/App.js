@@ -1,8 +1,5 @@
 import { Box, Container } from '@material-ui/core'
-import { Box } from '@material-ui/core'
 import ContactForm from './components/contactForm'
-import VerticalTabs from './components/side bar/VerticalTabs';
-
 
 import Hero from './components/Hero'
 import Membership from './components/Membership'
@@ -20,8 +17,15 @@ function App() {
       <Box mb={10}>
         <Membership/>
       </Box>
-      {/* <VerticalTabs></VerticalTabs> */}
-      <ContactForm/>
+      <Container>
+        <Box
+          display="flex"
+          flexDirection="row"
+          justifyContent="center"
+        >
+          <ContactForm/>
+        </Box>
+      </Container>
     </div>
   );
 }
