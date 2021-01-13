@@ -14,7 +14,7 @@ function App() {
       <Box mb={10}>
         <Differences/>
       </Box>
-      <Box mb={10}>
+      <Box mb={10} textAlign="center">
         <Membership/>
       </Box>
       <Container>
