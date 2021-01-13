@@ -1,4 +1,4 @@
-import './App.css';
+import { Box, Container } from '@material-ui/core'
 import { Box } from '@material-ui/core'
 import ContactForm from './components/contactForm'
 import VerticalTabs from './components/side bar/VerticalTabs';
