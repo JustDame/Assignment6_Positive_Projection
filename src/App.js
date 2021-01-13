@@ -4,6 +4,7 @@ import ContactForm from './components/contactForm'
 import Hero from './components/Hero'
 import Membership from './components/Membership'
 import Differences from './components/Differences'
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
         >
           <ContactForm/>
         </Box>
+        <Footer/>
       </Container>
+      
     </div>
   );
 }
