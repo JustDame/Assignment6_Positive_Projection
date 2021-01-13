@@ -42,7 +42,7 @@ export default function Hero() {
       }}
       className={classes.heroContainer}
     >
-      <Box className={classes.heroOverlay}>
+      <Box className={classes.heroOverlay} textAlign="center">
         <Fade in={true} timeout={1000}>
           <Typography
             className={`${classes.heroText} ${classes.heroTitle}`}
