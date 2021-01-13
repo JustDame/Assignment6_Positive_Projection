@@ -8,6 +8,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Grid from '@material-ui/core/Grid';
 
 
+
 class ContactForm extends React.Component {
     state = {  
         firstName: "",
@@ -20,22 +21,26 @@ class ContactForm extends React.Component {
         handleChange = e =>{
             this.setState(
             {[e.target.name]:e.target.value});
-            console.log("hello")
         };
-            
-
-        submitForm =(e) => {
-            e.preventDefault();
-            console.log(this.state)
           
+        submitForm () {
+        alert("Your submission was successful")
+
+        this.setState = {  
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            inquiry: ""
+        };
+        
         };
 
     render() { 
         return (  
 
-            <div>
-            <Grid container>
-            
+        <div>
+         <Grid container>
             <br/>
                
             <Grid item xs={12} >
@@ -46,19 +51,18 @@ class ContactForm extends React.Component {
             <form >
                    
                 
-                 <TextField
+                <TextField
                     name="firstName"
-                    onChange = {e =>this.state.FirstName}
+                    onChange = {e =>this.state.firstName}
                     type ="text" 
                     value ={this.state.FirstName} 
+                    id="standard-helperText"
                     label="First Name"
-                    
+                
                     />
 
                     <br/>
                         
-                    
-                    
                     <TextField
                     name="lastName"
                     onChange = {e =>this.state.LastName}
@@ -106,12 +110,17 @@ class ContactForm extends React.Component {
                  
             <br /> <br />
          
-            <Button onClick={(e)=>this.submitForm(e)} variant="contained">SUBMIT</Button>
+            {/* <button variant="contained" >reset</button> */}
+            <br /> <br />
+        
+            <Button variant="contained" onClick = {e =>this.submitForm()} color="primary">SUBMIT</Button>
+            
             </form>
+            
             </Grid>
-            </Grid>
+        </Grid>
 
-            </div>
+        </div>
 
 
         );

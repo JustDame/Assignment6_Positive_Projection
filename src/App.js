@@ -1,12 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import ContactForm from './components/contactForm'
+import VerticalTabs from './components/side bar/VerticalTabs';
+
 
 function App() {
   return (
     <div className="App">
+  
+    <VerticalTabs></VerticalTabs>
+      <ContactForm></ContactForm>
+   
 
-    <ContactForm></ContactForm>
+  
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
