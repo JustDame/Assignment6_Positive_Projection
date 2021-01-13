@@ -1,3 +1,5 @@
+Design: https://docs.google.com/drawings/d/1zu1XnDfRkxmDC--85Kd1LaCvEKHwLD-F4dNZ6_bl30g/edit?usp=sharing
+
 Name for companies:
 -Bank of files
 -Fox files
