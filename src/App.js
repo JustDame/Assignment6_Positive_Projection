@@ -6,12 +6,16 @@ import VerticalTabs from './components/side bar/VerticalTabs';
 
 import Hero from './components/Hero'
 import Membership from './components/Membership'
+import Differences from './components/Differences'
 
 function App() {
   return (
     <div className="App">
       <Box mb={10}>
         <Hero/>
+      </Box>
+      <Box mb={10}>
+        <Differences/>
       </Box>
       <Box mb={10}>
         <Membership/>
