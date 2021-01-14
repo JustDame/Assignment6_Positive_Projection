@@ -37,20 +37,31 @@ class ContactForm extends React.Component {
         };
 
     render() { 
+
+        const mystyle = {
+        
+            
+            color: 'red',
+            display: 'flex',
+            textAlign: 'center'
+           
+          };
         return (  
 
-        <div>
+        <div style={{marginBottom:'20px'}}>
          <Grid container>
             <br/>
                
             <Grid item xs={12} >
 
-            <Typography variant="h3" component="h3" gutterBottom>
+            <Typography style={{marginLeft:'70px', color:'blue'}} variant="h3" component="h3" gutterBottom>
             Contact Us
             </Typography>
             <form >
                    
-                
+                <div style={mystyle}>
+
+                <div style={{marginRight:'20px'}}>
                 <TextField
                     name="firstName"
                     onChange = {e =>this.state.firstName}
@@ -60,9 +71,10 @@ class ContactForm extends React.Component {
                     label="First Name"
                 
                     />
+                    </div>
 
-                    <br/>
-                        
+                    <div>
+                
                     <TextField
                     name="lastName"
                     onChange = {e =>this.state.LastName}
@@ -70,11 +82,15 @@ class ContactForm extends React.Component {
                     value ={this.state.LastName} 
                     id="standard-helperText"
                     label="Last Name"
+                    
                 
                     />
 
-                <br />
-
+                    </div>
+                    </div>
+                
+            <div style={mystyle}>
+                <div style={{marginRight:'20px'}}>
                     <TextField
                     name="email"
                     onChange = {e =>this.state.Email}
@@ -84,9 +100,9 @@ class ContactForm extends React.Component {
                     label="Email"
                    
                 />
+                </div>
 
-                    <br />  
-
+                <div>
                 <FormControl>
                     <InputLabel htmlFor="component-simple">Mobile#</InputLabel>
 
@@ -94,10 +110,12 @@ class ContactForm extends React.Component {
                     value={this.state.Phone} 
                     onChange={e =>this.state.Phone} />
                 </FormControl>
+                </div>
+            </div>
 
-                      <br />  <br />   <br />
+                      <br />
 
-                    <TextField
+                    <TextField style={{marginLeft:'80px'}}
                     name="inquiry"
                     value ={this.state.Inquiry} 
                     onChange = {e =>this.state.Inquiry}
@@ -111,10 +129,10 @@ class ContactForm extends React.Component {
             <br /> <br />
          
             {/* <button variant="contained" >reset</button> */}
-            <br /> <br />
+           
         
-            <Button variant="contained" onClick = {e =>this.submitForm()} color="primary">SUBMIT</Button>
-            
+            <Button style={{marginLeft:'140px'}} variant="contained" onClick = {e =>this.submitForm()} color="primary">SUBMIT</Button>
+                <br />
             </form>
             
             </Grid>
