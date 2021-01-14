@@ -19,7 +19,7 @@ function App() {
       <Box mb={10} textAlign="center">
         <Membership/>
       </Box>
-      <Box mb={10}> 
+      <Box mb={10} textAlign="center"> 
       <Aboutus/>
       </Box>
       <Container>
