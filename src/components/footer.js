@@ -1,5 +1,6 @@
 import { blue } from "@material-ui/core/colors";
 import { Block } from "@material-ui/icons";
+import { Container, Box, Typography, makeStyles } from '@material-ui/core'
 
 export default function Footer(){
     let style ={
@@ -66,17 +67,17 @@ export default function Footer(){
         </div>
         <div>
            
-        {/* <p> */}
+        <Typography varient="p">
             <span>Sean Wilson |</span>
             <span>Damian Pascal |</span>
             <span>Jordane Allen |</span>
             <span>Jade Marte</span>
-        {/* </p>  */}
+        </Typography> 
         
         </div>
     </div>
         <div style={copyStyle}>
-            <p>CopyRight 2021.</p>
+            <Typography variant ="p">CopyRight 2021.</Typography>
         </div>
     </div>);
 }
