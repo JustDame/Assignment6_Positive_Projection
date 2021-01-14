@@ -3,7 +3,8 @@ import { Block } from "@material-ui/icons";
 
 export default function Footer(){
     let style ={
-        backgroundColor: "rgba(143,200,235,0.5)",
+        // backgroundColor: "rgba(143,200,235,0.5)",
+        backgroundColor: "#9DDFFF",
         // textAlign: "center",
         position: "relative",
         border: "3px",
@@ -31,13 +32,14 @@ export default function Footer(){
         flexDirection:"column",
         position: "relative",
         zIndex:100,
-        color:"#E3E3DE"
+        color:"#EDEDE8"
 
     }
     let copyStyle = {
         marginLeft:"auto",
         position: "relative",
         zIndex:100,
+        color:"#EDEDE8"
         // display:"flex",
         // alignSelf:"flex-end",
         // flexDirection:"row-reverse",
