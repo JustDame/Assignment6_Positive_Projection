@@ -7,7 +7,7 @@ export default function Membership() {
         return (
           <Container maxWidth="lg">
             <Box >
-              <Typography variant="h1" component="h1" gutterBottom>
+              <Typography variant="h3" component="h3" gutterBottom>
                 Membership
               </Typography>
               <Grid container spacing={3}>
