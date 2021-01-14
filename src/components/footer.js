@@ -67,7 +67,7 @@ export default function Footer(){
         </div>
         <div>
            
-        <Typography varient="p">
+        <Typography variant="p">
             <span>Sean Wilson |</span>
             <span>Damian Pascal |</span>
             <span>Jordane Allen |</span>
