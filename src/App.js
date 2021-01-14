@@ -26,8 +26,9 @@ function App() {
         >
           <ContactForm/>
         </Box>
-        <Footer/>
+        
       </Container>
+      <Footer/>
       
     </div>
   );
