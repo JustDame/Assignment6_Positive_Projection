@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Membership from './components/Membership'
 import Differences from './components/Differences'
 import Footer from './components/footer'
+import Aboutus from './components/Aboutus'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </Box>
       <Box mb={10} textAlign="center">
         <Membership/>
+      </Box>
+      <Box mb={10}> 
+      <Aboutus/>
       </Box>
       <Container>
         <Box
