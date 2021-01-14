@@ -1,5 +1,4 @@
-import { blue } from "@material-ui/core/colors";
-import { Block } from "@material-ui/icons";
+
 import { Container, Box, Typography, makeStyles } from '@material-ui/core'
 
 export default function Footer(){
